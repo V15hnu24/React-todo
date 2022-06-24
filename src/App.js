@@ -47,7 +47,7 @@ class App extends React.Component{
         <div className="container">
           <h2>Add an Item... </h2>
           <br/>
-          <input type="text" className='input-text' placeholder='write a todo' required value={this.state.newItem} onChange={ e => this.updateInput(e.target.value)}>
+          <input type="text" className='input-text' placeholder='Write a todo' required value={this.state.newItem} onChange={ e => this.updateInput(e.target.value)}>
           </input>
           <button className='add-btn btn' onClick={() => this.addItem(this.state.newItem)} disabled={!this.state.newItem.length}>
             Add todo
